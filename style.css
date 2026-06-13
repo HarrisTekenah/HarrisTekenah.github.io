@@ -1,3 +1,53 @@
+body {
+    margin: 0;
+    font-family: "Segoe UI", Arial, sans-serif;
+    color: #d8dee9;
+    line-height: 1.7;
+
+    background:
+        radial-gradient(circle at top left,
+            rgba(0, 209, 178, 0.08),
+            transparent 35%),
+        radial-gradient(circle at bottom right,
+            rgba(0, 209, 178, 0.05),
+            transparent 40%),
+        #070b10;
+}
+
+header {
+    text-align: center;
+    padding: 60px 20px;
+    background: #0b1118;
+    border-bottom: 1px solid #1a2330;
+}
+
+header h1 {
+    color: #ffffff;
+    margin: 0;
+    font-size: 3rem;
+}
+
+header p {
+    color: #00d1b2;
+    font-size: 1.1rem;
+    margin-top: 10px;
+}
+
+section {
+    padding: 50px 20px;
+    max-width: 1100px;
+    margin: auto;
+}
+
+h2 {
+    color: #00d1b2;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 0.9rem;
+    margin-bottom: 25px;
+    border: none;
+}
+
 .project-grid {
     display: grid;
     gap: 25px;
@@ -45,9 +95,8 @@
     color: #00d1b2;
     text-decoration: none;
     font-weight: 600;
-    padding: 0;
     background: transparent;
-    border-radius: 0;
+    padding: 0;
 }
 
 .project-card a:hover {
