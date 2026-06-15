@@ -8,74 +8,176 @@
 </head>
 <body>
     <header>
-        <img src="profile.jpg" alt="Harris Tekenah" class="profile-pic">
-        <h1>Harris Tekenah</h1>
-        <p>Data Scientist | Financial Engineer | Quantitative Analyst | Quant Researcher</p>
+        <div class="header-content">
+            <h1>HARRIS TEKENAH</h1>
+            <p class="tagline">Data Scientist | Financial Engineer | Quantitative Analyst</p>
+        </div>
     </header>
 
-    <section id="about">
-        <h2>About Me</h2>
-        <p>
-            Mathematics graduate, banking professional, and MSc Financial Engineering candidate specializing in
-            machine learning, Financial Markets Research, quantitative finance, volatility forecasting, and business analytics.
-        </p>
-    </section>
+    <main class="container">
+        <!-- About Me -->
+        <section id="about">
+            <h2>About Me</h2>
+            <p>MSc Financial Engineering candidate specializing in quantitative finance, machine learning, and financial markets research. Mathematics graduate with professional banking experience and a proven track record in data science, volatility forecasting, and business analytics.</p>
+        </section>
 
-    <section id="projects">
-        <h2>Featured Projects</h2>
-        <div class="project-grid">
-            <div class="project-card">
-                <img src="twitter-sp500.png" alt="Twitter Sentiment Project">
-                <h3>Twitter Sentiment vs S&P 500</h3>
-                <p>NLP-driven sentiment analysis measuring social sentiment influence on equity markets.</p>
-                <a href="https://github.com/HarrisTekenah/Twitter-sentiment-vs-sp500" target="_blank">View Project</a>
+        <!-- Skills -->
+        <section id="skills">
+            <h2>Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>Programming & Data</h3>
+                    <ul>
+                        <li>Python (NumPy, Pandas, Scikit-learn)</li>
+                        <li>R & RStudio</li>
+                        <li>SQL & Database Management</li>
+                        <li>Excel (Advanced)</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3>Finance & Quantitative</h3>
+                    <ul>
+                        <li>Quantitative Finance</li>
+                        <li>Stochastic Modeling</li>
+                        <li>GARCH Volatility Forecasting</li>
+                        <li>Financial Econometrics</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3>Machine Learning & AI</h3>
+                    <ul>
+                        <li>NLP & Sentiment Analysis</li>
+                        <li>Predictive Analytics</li>
+                        <li>Time Series Analysis</li>
+                        <li>Geospatial Analytics</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience -->
+        <section id="experience">
+            <h2>Experience</h2>
+            <div class="experience-item">
+                <div class="exp-header">
+                    <h3>Universal Banker</h3>
+                    <span class="company">Union Bank of Nigeria</span>
+                </div>
+                <p class="exp-description">Banking operations, customer relationship management, and financial services delivery</p>
+            </div>
+            
+            <div class="experience-item">
+                <div class="exp-header">
+                    <h3>Data Analyst (Intern)</h3>
+                    <span class="company">Extol Techlink NG</span>
+                </div>
+                <p class="exp-description">Data analysis, reporting, and business intelligence projects</p>
+            </div>
+            
+            <div class="experience-item">
+                <div class="exp-header">
+                    <h3>Graduate Research Assistant</h3>
+                    <span class="company">Benue State University</span>
+                </div>
+                <p class="exp-description">Research support, data collection, and academic analysis</p>
+            </div>
+        </section>
+
+        <!-- Education -->
+        <section id="education">
+            <h2>Education</h2>
+            <div class="education-item">
+                <h3>MSc Financial Engineering</h3>
+                <p class="institution">WorldQuant University</p>
+            </div>
+            
+            <div class="education-item">
+                <h3>BSc(Ed) Mathematics</h3>
+                <p class="institution">Federal University Otuoke</p>
+            </div>
+        </section>
+
+        <!-- Featured Projects -->
+        <section id="projects">
+            <h2>Featured Projects</h2>
+            
+            <div class="project-item">
+                <div class="project-header">
+                    <h3>Twitter Sentiment vs S&P 500</h3>
+                    <a href="https://github.com/HarrisTekenah/Twitter-sentiment-vs-sp500" target="_blank" class="project-link">GitHub</a>
+                </div>
+                <p>NLP-driven sentiment analysis measuring social sentiment influence on equity markets. Demonstrates expertise in natural language processing and financial market analysis.</p>
             </div>
 
-            <div class="project-card">
-                <img src="stochastic-models.png" alt="Stochastic Models Project">
-                <h3>Stochastic Models for Asset Returns</h3>
-                <p>Advanced financial engineering models including jump diffusion, Heston, and asset-return simulations.</p>
-                <a href="https://github.com/HarrisTekenah/Stochastic-Models-for-Asset-Returns" target="_blank">View Project</a>
+            <div class="project-item">
+                <div class="project-header">
+                    <h3>Stochastic Models for Asset Returns</h3>
+                    <a href="https://github.com/HarrisTekenah/Stochastic-Models-for-Asset-Returns" target="_blank" class="project-link">GitHub</a>
+                </div>
+                <p>Advanced financial engineering models including jump diffusion, Heston, and Monte Carlo simulations for asset return forecasting.</p>
             </div>
 
-            <div class="project-card">
-                <img src="music-analytics.png" alt="Music Popularity Project">
-                <h3>Music Popularity Analytics Cross-Platform</h3>
-                <p>Cross-platform analytics exploring digital music trends, engagement, and audience behavior.</p>
-                <a href="https://github.com/HarrisTekenah/Music-Popularity-Analytics-Cross-Platform" target="_blank">View Project</a>
+            <div class="project-item">
+                <div class="project-header">
+                    <h3>Music Popularity Analytics Cross-Platform</h3>
+                    <a href="https://github.com/HarrisTekenah/Music-Popularity-Analytics-Cross-Platform" target="_blank" class="project-link">GitHub</a>
+                </div>
+                <p>Cross-platform analytics exploring digital music trends, engagement metrics, and audience behavior across streaming services.</p>
             </div>
 
-            <div class="project-card">
-                <img src="montevideo.png" alt="Montevideo Housing Project">
-                <h3>GeoPriced Montevideo</h3>
-                <p>Geospatial predictive analytics for real estate pricing using location intelligence.</p>
-                <a href="https://github.com/HarrisTekenah/GeoPriced-Montevideo" target="_blank">View Project</a>
+            <div class="project-item">
+                <div class="project-header">
+                    <h3>GeoPriced Montevideo</h3>
+                    <a href="https://github.com/HarrisTekenah/GeoPriced-Montevideo" target="_blank" class="project-link">GitHub</a>
+                </div>
+                <p>Geospatial predictive analytics for real estate pricing using location intelligence and machine learning models.</p>
             </div>
 
-            <div class="project-card">
-                <img src="sasol-volatility.png" alt="Volatility Modeling Project">
-                <h3>Modeling Volatility: Sasol Stock</h3>
-                <p>GARCH-based volatility forecasting and financial econometric analysis.</p>
-                <a href="https://github.com/HarrisTekenah/Modeling-Volatility-Sasols-Stock" target="_blank">View Project</a>
+            <div class="project-item">
+                <div class="project-header">
+                    <h3>Modeling Volatility: Sasol Stock</h3>
+                    <a href="https://github.com/HarrisTekenah/Modeling-Volatility-Sasols-Stock" target="_blank" class="project-link">GitHub</a>
+                </div>
+                <p>GARCH-based volatility forecasting and financial econometric analysis for commodity-linked equities.</p>
             </div>
 
-            <div class="project-card">
-                <img src="flight-delay.png" alt="Flight Delay Prediction Project">
-                <h3>Flight Delay Prediction</h3>
-                <p>loading........</p>
-                <a href="https://github.com/HarrisTekenah/Modeling-Volatility-Sasols-Stock" target="_blank">View Project</a>
+            <div class="project-item">
+                <div class="project-header">
+                    <h3>Flight Delay Prediction</h3>
+                    <a href="https://github.com/HarrisTekenah/Flight-Delay-Prediction" target="_blank" class="project-link">GitHub</a>
+                </div>
+                <p>Predictive analytics model using machine learning to forecast flight delays based on operational and weather data.</p>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section id="contact">
-    <h2>Contact</h2>
-    <p>Email: 
-        <a href="mailto:harrisedwardtekenah@gmail.com">harrisedwardtekenah@gmail.com</a> | 
-        <a href="mailto:harristekenah@unionbankng.com">harristekenah@unionbankng.com</a>
-    </p>
-    <p>Phone: <a href="tel:+234702675932">+234 702 675 9932</a></p>
-    </section>
+        <!-- Certifications -->
+        <section id="certifications">
+            <h2>Certifications</h2>
+            <ul>
+                <li>MSc Financial Engineering (In Progress) - WorldQuant University</li>
+                <li>Machine Learning Specialization - [Add if you have any]</li>
+                <li>Python for Data Science - [Add if you have any]</li>
+            </ul>
+        </section>
+
+        <!-- Contact -->
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>
+                <strong>Email:</strong> 
+                <a href="mailto:harrisedwardtekenah@gmail.com">harrisedwardtekenah@gmail.com</a> | 
+                <a href="mailto:harristekenah@unionbankng.com">harristekenah@unionbankng.com</a>
+            </p>
+            <p>
+                <strong>Phone:</strong> 
+                <a href="tel:+234702675932">+234 702 675 9932</a>
+            </p>
+            <p>
+                <strong>GitHub:</strong> 
+                <a href="https://github.com/HarrisTekenah" target="_blank">github.com/HarrisTekenah</a>
+            </p>
+        </section>
+    </main>
 
     <footer>
         <p>&copy; 2026 Harris Tekenah. All rights reserved.</p>
