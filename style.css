@@ -173,60 +173,75 @@ h3 {
     margin: 0;
 }
 
-/* Projects Section */
-.project-item {
-    margin-bottom: 35px;
-    padding: 20px;
+/* Projects Section - Grid */
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.project-card {
     background: #161b22;
     border: 1px solid #30363d;
-    border-left: 3px solid #58a6ff;
-    border-radius: 6px;
+    border-radius: 8px;
+    overflow: hidden;
     transition: all 0.3s ease;
-}
-
-.project-item:hover {
-    background: #0d1117;
-    border-left-color: #79c0ff;
-}
-
-.project-header {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 15px;
-    margin-bottom: 12px;
+    flex-direction: column;
 }
 
-.project-header h3 {
-    margin: 0;
-    flex: 1;
-    min-width: 200px;
+.project-card:hover {
+    border-color: #58a6ff;
+    transform: translateY(-4px);
+    box-shadow: 0 8px 16px rgba(88, 166, 255, 0.15);
 }
 
-.project-link {
+.project-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+}
+
+.project-content {
+    padding: 20px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.project-content h3 {
+    margin: 0 0 10px 0;
+    font-size: 1.1rem;
+}
+
+.project-content p {
+    color: #c9d1d9;
+    font-size: 0.9rem;
+    line-height: 1.6;
+    margin-bottom: 15px;
+    flex-grow: 1;
+}
+
+.project-content a {
     color: #58a6ff;
     text-decoration: none;
-    font-size: 0.9rem;
     font-weight: 600;
-    padding: 6px 12px;
+    font-size: 0.9rem;
+    display: inline-block;
+    padding: 8px 12px;
     background: #21262d;
     border: 1px solid #30363d;
     border-radius: 4px;
     transition: all 0.2s ease;
+    align-self: flex-start;
 }
 
-.project-link:hover {
+.project-content a:hover {
     background: #30363d;
     border-color: #58a6ff;
     color: #79c0ff;
-}
-
-.project-item p {
-    color: #c9d1d9;
-    font-size: 0.95rem;
-    line-height: 1.7;
-    margin: 0;
 }
 
 /* Certifications Section */
@@ -305,14 +320,15 @@ footer {
         gap: 25px;
     }
 
+    .project-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
     .exp-header,
     .project-header {
         flex-direction: column;
         align-items: flex-start;
-    }
-
-    .project-link {
-        align-self: flex-start;
     }
 
     .container {
@@ -341,7 +357,16 @@ footer {
         font-size: 1rem;
     }
 
-    .project-item {
+    .project-grid {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .project-card img {
+        height: 150px;
+    }
+
+    .project-content {
         padding: 15px;
     }
 
